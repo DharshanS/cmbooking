@@ -85,7 +85,7 @@ public function __construct(AirServiceImpl $airRequest,CoreServiceImp $core)
 
 public function index(){
 
-    return view('home.index');
+    return view('flight.index');
 
 }
 

@@ -1,0 +1,743 @@
+
+@font-face {
+    font-family: 'CANDARA';
+    src: url('font/CANDARA.eot');
+    src: local('CANDARA'), url('font/CANDARA.woff') format('woff'), url('font/CANDARA.ttf') format('truetype');
+}
+
+.fontsforweb_fontid_1398 {
+    font-family: 'CANDARA' !important;
+}
+body{
+  background-color: #f5f5f5 !important;
+    font-family: 'CANDARA' !important;
+
+
+
+}
+.nav-link{
+  color:#fff;
+}
+.navbar-collapse{
+  -webkit-justify-content: flex-end;
+    padding-right: 5rem;
+    width: auto;
+    display: flex;
+}
+.card-img-top{
+  border-radius: 0 !important
+}
+li{
+  list-style: none;
+}
+.card{
+    border-radius: 0 !important;
+    height: 100%;
+    border: none;
+    background: #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+}
+.top-nav-section{
+  background: #de264c;
+  padding: 15px 0;
+  /* text-align: right; */
+}
+.top-second-section  {
+  background: #FFF;
+
+  padding: 15px 0;
+}
+.top-nav-section-container{
+  margin-right: 1px !important;
+}
+.top-second-section-container{
+  margin-left: 19px !important;
+}
+.top-second-section .nav-link {
+    color:#000;
+}
+.mainLogo{width: 100px;}
+.main-banner-main-div{
+    height: 554px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Search Menu in Index */
+.serch-section {
+    background: rgba(0,0,0,0.3);
+    padding: 20px 0;
+    margin-top: 365px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.serch-col {
+ width: 100%
+}
+.search-btn-group{
+  display: -webkit-box;
+      display: -ms-flexbox;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      padding-bottom: 6px;
+}
+.one-way{
+  width: 10%;
+  margin: 0px 5px;
+}
+.btn-trip{
+      float: left;
+      border-radius: 10px 10px 0px 0px !important;
+      padding: 1px 15px !important;
+      background: #fff;
+      width: 100%
+}
+.flight-trip{
+      border-radius: 10px 10px 0px 0px !important;
+      padding: 4px !important;
+      background: #fff;
+      width: 15.3%;
+      float: right;
+}
+.btn-trip-active{
+  background: #de264c;
+  color: #fff;
+}
+.btn-trip:hover{
+  background: #de264c;
+  color: #fff;
+}
+.search-label{
+  color: #fff;
+font-weight: 700;
+margin: 1px;
+font-size: 22px;
+}
+.origin{
+  width: 24%;
+  padding: 0 5px;
+}
+.depart{
+  width: 16%;
+  padding: 0 5px;
+}
+.search-icon{
+  background-repeat: no-repeat;
+  border-radius: 10px 0px 0px 0px !important;
+  border: none !important;
+  padding: 2px !important;
+}
+.search-icon-size{
+    width:44px;
+}
+.or{
+      background-position: 12px -242px;
+      background-repeat: no-repeat;
+      width: 45px;
+      border-radius: 10px 0px 0px 0px !important;
+      border: none !important;
+      margin-top: 29px !important;
+      height: 42px;
+}
+.origin-border{
+      border: none !important;
+  border-radius: 0px 10px 0px 0px !important;
+  padding: 6px !important;
+}
+.input-group-text{
+  background-color:#fff !important;
+}
+.search-flight{
+  width: 100%;
+  float: right;
+  padding-right: 6px;
+}
+
+/* Today Deal & Offers */
+.deal-section{
+  padding-top: 3%;
+}
+.serch-section{
+
+}
+.section-h2{
+    color: #de264c;
+    margin-bottom: 17px;
+    margin: 0px -1px;
+}
+.section-deal-width{
+  width: 100%;
+    /* float: left; */
+    display: flex;
+}
+.deal-item{
+    width: 33%;
+    padding: 4px
+}
+.deal-item-img{
+  width: 100%;
+  height: 258px;
+}
+.deal-item-info{
+  background: #fff;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+.item-into{
+  width: 70%;
+float: left;
+font-size: 22px;
+}
+.item-rate{
+  width: 30%;
+  float:left;
+  text-align: right;
+  color: #de264c;
+  font-size: 22px;
+}
+.item-info-text{
+    width:75%;
+    float: left;
+}
+.info-icon{
+    width: 53px;
+    height: 53px;
+    border: solid 3px #f69322;
+    border-radius: 43px;
+    padding-top: 6px;
+}
+.item-info-icon{
+    width:25%;
+    float: left;
+    padding-top: 8px;
+}
+/* OUR PATNER */
+.our-patner{
+  width: 22%;
+  /*  */
+  padding: 4px;
+}
+.our-patner-img{
+  width: 209px;
+background-color: #fff;
+padding: 39px;
+height: 209px;
+}
+.you-fly-title{
+    font-size: 25px;
+}
+
+/*Slider*/
+
+
+.slick-slide {
+    margin: 0px 5px;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+/*Offer*/
+.offer-img{
+  width: 90px;
+    height: auto;
+    padding-top: 14px;
+}
+.offer-text{
+    padding: 27px 0px 0px 11px !important;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 16px;
+}
+.offer-btn-col{
+    padding-top: 29px !important;;
+}
+.offer-book-btn{
+    background: #de264c !important;
+    color:#fff !important;
+    padding: 0px 26px !important;
+    border-radius: 0 !important;
+}
+.travel-row{
+    margin-bottom: 18px;
+}
+.card-body-2{
+  padding:0px 1.25rem;
+}
+
+
+
+/* BEFORE YOUR FLY */
+.before-your-fly-text{
+  text-align: justify;
+  line-height: 19px
+}
+.offer-section-body{
+
+  padding-bottom: 0px !important;
+}
+
+
+
+/* footer */
+.footer{
+
+  height: 554px;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+}
+.footer-mainDiv{
+    padding: 150px  111px  0px !important;
+    color: #fff;
+}
+.footer-a{
+  color:#fff;
+}
+.footer-ul{
+  padding: 0
+}
+.footer-link{
+  margin-top: 37px;
+    font-weight: 700;
+}
+.footer-input{
+  background-color: rgba(255,255,255,0.5) !important;
+    border: 0 !important;
+}
+.footer-btn{
+    width: 20% !important;
+    /* display: flex; */
+    float: right;
+    background: rgba(222, 38, 76,0.7)!important;
+    color: #fff !important;
+    font-weight: 700;
+    border: 0 !important;
+}
+.address{
+      font-size: 17px !important;
+}
+
+
+
+/* Search Page CSS */
+.modify-main{
+  width: 20%;
+  float: left;
+}
+.result-mai{
+  width: 80%;
+  float: left;
+}
+.rel-main-img{
+  width: 15%;
+  float: left;
+}
+.rel-main-info{
+    font-family: 'Roboto', sans-serif !important;
+  width: 85%;
+    padding-bottom: 6px;
+  float: left;
+      border-bottom: solid 1px #f5f5f5;
+}
+.rel-main-info2{
+    font-family: 'Roboto', sans-serif !important;
+  width: 85%;
+    padding-top: 6px;
+  float: left;
+      border-bottom: solid 1px #f5f5f5;
+}
+.city-name-main{
+  width: 60%;
+  float: left;
+}
+.paci-icon-main{
+  width: 20%;
+  float: left;
+}
+.sear-rate-main{
+  width: 20%;
+float: left;
+text-align: center;
+border-left: solid 1px #f5f5f5;
+padding-left: 10px;
+}
+.sear-rate-main2{
+  width: 19%;
+float: left;
+text-align: center;
+border-left: solid 1px #f5f5f5;
+padding-left: 10px;
+}
+.city-btn{
+  padding: 0px 15px !important;
+  color: #fff;
+  background: #048386 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  font-weight: 500 !important;
+   font-size: 12px !important;
+}
+.select-now{
+    padding: 0px 20px !important;
+    color: #fff;
+    background: #ca0852!important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 500 !important;
+    /* font-size: 14px !important; */
+}
+.city-span{
+  font-size: 12px;
+    color: #797676;
+    margin-top: -5px;
+    display: block;
+}
+
+.avg-span{
+  font-size: 14px;
+    color: #797676;
+    margin-bottom:-5px;
+    display: block;
+}
+.avg-rate{
+  font-size: 22px;
+      color: #7cbd1b;
+      font-weight: bold;
+      margin-bottom: -5px;
+      display: block;
+}
+.city-take-col{
+    width: 26.7%;
+    padding-top: 8px;
+    float: left;
+    border-right: solid 1px #f5f5f5
+}
+.cmb{
+    font-weight: 700;
+    font-size: 12px;
+    text-transform:uppercase;
+}
+.cmb-icon{
+    width: 31px;
+}
+.take-off{
+    color: #e22449;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.take-date{
+    font-weight: 500;
+    font-size: 12px;
+}
+.card-filter{
+    border: 0 !important;
+    /* background: #fff; */
+    margin-bottom: 10px;
+}
+.card-filter-h1{
+    background: #ffffff;
+    border: 0 !important;
+}
+.filter-btn{
+    color: #000 !important;
+
+    font-size: 22px !important;
+    font-weight: 500!important;
+}
+.filter-btn-icon{
+    padding-top: 14px;
+    font-size: 19px;
+    color: #e22449;
+    padding-right: 12px;
+}
+.sort-input{
+    margin: 6px 0px;
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+.sort-btn{
+    margin: 6px 0px;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: #fff;
+    font-weight: 600 !important;
+    background: #f6931d;
+    padding: 5px 44px !important;
+}
+.more-time-icon{
+    font-size: 17px;
+    color: #f6931d;
+}
+.insurance-btn-col{
+    text-align: center;
+    padding-top: 39px !important;
+
+}
+.insurance-btn{
+    background: #f6931d;
+    color: #fff;
+    font-weight: 600 !important;
+    padding: 6px 54px !important;
+    text-transform: uppercase;
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+.insu-text{
+    width: 30% !important;
+}
+.insu-img{
+    width: 60%!important;
+    padding-left: 5px;
+}
+.insu-btn{
+    width: 30%!important;
+}
+/**/
+/* Medium screen : 992px. */
+/*@media only screen and (min-width: 992px) and (max-width: 1199px) {}*/
+
+  /* Tablet :768px. */
+/*@media only screen and (min-width: 768px) and (max-width: 991px) {}*/
+
+  /* Large Mobile :480px. */
+/*@media only screen and (max-width: 767px) {}*/
+
+  /* small Mobile :320px. */
+/*@media only screen and (max-width: 479px) {}*/
+
+@media (min-width: 576px) {
+    .origin{
+        width: 100%;
+        padding: 0 5px;
+    }
+    .depart{
+        width: 100%;
+        padding: 0 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .deal-item-img{
+        height: 180px;
+    }
+    .item-info-icon {
+        padding-top: 3px;
+    }
+    .info-icon {
+        width: 34px;
+        height: 34px;
+        /* border-radius: 43px; */
+        padding-top: 2px;
+    }
+    .item-info-text{
+        font-size: 14px;
+    }
+    .item-rate {
+        font-size: 13px;
+    }
+    .one-way {
+        width: 13%;
+        margin: 0px 5px;
+    }
+    .main-banner-main-div {
+        height: 450px;
+    }
+    .origin {
+        width: 47%;}
+    .depart {
+        width: 33.33%;
+        padding: 0 5px;
+    }
+    .serch-section{
+        margin-top: 220px;
+    }
+    .before-your-fly-text{
+        font-size: 14px;
+    }
+
+    .you-fly-title {
+        font-size: 20px;
+    }
+    .offer-img{
+        width:61px ;
+    }
+    .offer-book-btn {
+        font-weight: 700 !important;
+        padding: 0px 18px !important;
+    }
+    .offer-text {
+        font-size: 15px;
+        padding: 31px 7px 0px 1px !important;
+        line-height: 19px;
+    }
+    .insu-text{
+        width: 60% !important;
+    }
+    .insu-img{
+        width: 40%!important;
+    }
+    .insu-btn{
+        width: 100%!important;
+    }
+    .offer-btn-col {
+        padding-top: 6px !important;
+    }
+    .insurance-btn{
+        padding: 6px 20px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .deal-item-img{
+        height: 180px;
+    }
+    .item-info-icon {
+        padding-top: 3px;
+    }
+    .info-icon {
+        width: 40px;
+        height: 40px;
+        /* border-radius: 43px; */
+        padding-top: 2px;
+    }
+    .item-info-text{
+        font-size: 17px;
+    }
+    .item-rate{
+        font-size: 16px;
+    }
+    .origin{
+        width: 23%;
+    }
+    .flight-trip{
+        width: 15.3%;
+    }
+    .search-flight {
+
+        padding-right: 17px;
+    }
+    .offer-book-btn {
+        padding: 0px 20px !important;
+    }
+
+    .offer-text {
+        padding: 27px 0px 0px 2px !important;
+        font-size: 20px;
+    }
+    .offer-img{
+        width: 70px;
+    }
+    .offer-btn-col {
+        padding-top: 7px !important;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .deal-item-img{
+        height: 180px;
+    }
+    .item-info-icon {
+        padding-top: 3px;
+    }
+    .info-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 43px;
+        padding-top: 2px;
+    }
+    .item-info-text{
+        font-size: 20px;
+    }
+    .item-rate{
+        font-size: 20px;
+    }
+    .one-way {
+        width: 10%;
+        margin: 0px 5px;
+    }
+    .origin{
+        width: 24%;
+        padding: 0 5px;
+    }
+    .depart{
+        width: 16%;
+        padding: 0 5px;
+    }
+    .main-banner-main-div{
+        height: 554px;
+
+    }
+    .serch-section {
+        padding: 20px 0;
+        margin-top: 315px;
+    }
+    .insurance-btn{
+        padding: 6px 34px !important;
+    }
+    .insurance-btn-col{
+        padding-top: 22px;
+    }
+    .offer-img {
+        width: 86px;
+    }
+    .insu-text{
+        width: 43% !important;
+    }
+    .insu-img{
+        width: 27%!important;
+    }
+    .insu-btn{
+        width: 30%!important;
+        padding-top: 44px !important;
+    }
+    .offer-img {
+        width: 75px;
+    }
+}
+@media (min-width:1630px) {
+    .deal-item-img {
+        height: 217px;
+    }
+    .item-info-text {
+        font-size: 21px;
+    }
+    .item-rate{
+        font-size: 21px;
+    }
+    .info-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .one-way {
+        width: 10%;
+        margin: 0px 5px;
+    }
+    .origin{
+        width: 24%;
+        padding: 0 5px;
+    }
+    .depart{
+        width: 16%;
+        padding: 0 5px;
+    }
+    .insu-text{
+        width: 30% !important;
+    }
+    .insu-img{
+        width: 60%!important;
+    }
+    .insu-btn{
+        width: 30%!important;
+    }
+}
