@@ -47,8 +47,11 @@ Sri Lanka<br>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="dist/slick/slick.js"></script>
     <script type="text/javascript" src="dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="dist/js/bootstrap-datepicker.js"></script>
+
     <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script  type="text/javascript" src="{{ asset('/js/cmb.js') }}" ></script>
+
 
 
     <script type="text/javascript">

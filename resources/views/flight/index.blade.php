@@ -36,8 +36,8 @@
                                             <img src="dist/img/icon/ICONS-01.png" class="search-icon-size">
                                         </div>
                                     </div>
-                                    <input type="text" class="form-control origin-border" id="inlineFormInputGroup"
-                                           placeholder="Username">
+                                    <input type="text" class="form-control origin-border place" id="origin"
+                                           placeholder="Colombo, Sri Lanka(CMB)">
                                 </div>
                             </div>
                         </div>
@@ -53,8 +53,8 @@
                                         <img src="dist/img/icon/ICONS-02.png" class="search-icon-size">
                                     </div>
                                 </div>
-                                <input type="text" class="form-control origin-border" id="inlineFormInputGroup"
-                                       placeholder="Username">
+                                <input type="text" class="form-control origin-border place" id="destination"
+                                       placeholder="destination">
                             </div>
                         </div>
                         <div class="depart">
@@ -66,8 +66,8 @@
                                         <img src="dist/img/icon/ICONS-03.png" class="search-icon-size">
                                     </div>
                                 </div>
-                                <input type="text" class="form-control origin-border" id="inlineFormInputGroup"
-                                       placeholder="Username">
+                                <input type="text" class="form-control origin-border" id="depart-date"
+                                       placeholder="depart">
                             </div>
                         </div>
 
@@ -79,8 +79,8 @@
                                         <img src="dist/img/icon/ICONS-03.png" class="search-icon-size">
                                     </div>
                                 </div>
-                                <input type="text" class="form-control origin-border" id="inlineFormInputGroup"
-                                       placeholder="Username">
+                                <input type="text" class="form-control origin-border" id="arrival-date"
+                                       placeholder="arrival">
                             </div>
                         </div>
                         <div class="depart">
@@ -93,7 +93,7 @@
                                     </div>
                                 </div>
                                 <input type="text" class="form-control origin-border" id="inlineFormInputGroup"
-                                       placeholder="Username">
+                                       placeholder="travel">
                             </div>
                         </div>
 

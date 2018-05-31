@@ -13,6 +13,27 @@
 
 
 
+
+.ui-widget.ui-widget-content {
+  /* border: 1px solid #c5c5c5; */
+  /* padding-right: 31px; */
+  //top: 432px !important;
+  //left: 3% !important;
+}
+
+
+//.ui-state-hover, .ui-state-active {
+//  color: #ffffff;
+//  text-decoration: none;
+//  background-color: #0088cc;
+//  border-radius: 0px;
+//  -webkit-border-radius: 0px;
+//  -moz-border-radius: 0px;
+//  background-image: none;
+//}
+
+
+
 @font-face {
   font-family: 'CANDARA';
   src: url('font/CANDARA.eot');
@@ -54,7 +75,7 @@ li{
 }
 .top-nav-section{
   background: #de264c;
-  padding: 15px 0;
+  padding: 6px 0;
   /* text-align: right; */
 }
 .top-second-section  {

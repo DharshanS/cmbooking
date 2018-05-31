@@ -11075,7 +11075,12 @@ html {
     -ms-flex-item-align: stretch !important;
     align-self: stretch !important;
   }
-}@font-face {
+}.ui-widget.ui-widget-content {
+  /* border: 1px solid #c5c5c5; */
+  /* padding-right: 31px; */
+}
+
+@font-face {
   font-family: 'CANDARA';
   src: url(/fonts/CANDARA.eot?193f1c9f612107b062b7e6c6fa740e4c);
   src: local("CANDARA"), url(/fonts/CANDARA.woff?92432066fcbe4d3081fd118089ad9d66) format("woff"), url(/fonts/CANDARA.ttf?8daa0f2304ee100fe3888d5b7307e64f) format("truetype");
@@ -11123,7 +11128,7 @@ li {
 
 .top-nav-section {
   background: #de264c;
-  padding: 15px 0;
+  padding: 6px 0;
   /* text-align: right; */
 }
 
