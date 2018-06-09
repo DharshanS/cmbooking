@@ -13,7 +13,8 @@
     <section class="serch-section">
         <div class="container">
             <div class="row">
-                <div class="serch-col">
+                <form  action="/air-search" method="">
+                <div class="serch-col" >
                     <div class="search-btn-group">
                         <div class="one-way">
                             <button type="button" class=" btn-trip btn btn-trip-active" name="button">One Way</button>
@@ -99,7 +100,7 @@
 
 
                         <div class="search-flight">
-                            <button type="button" class="btn flight-trip  btn-trip-active" name="button">Search Flight
+                            <button type="submit" class="btn flight-trip  btn-trip-active" name="button">Search Flight
                             </button>
 
                         </div>
@@ -107,6 +108,7 @@
 
                     </div>
                 </div>
+                </form>
 
             </div>
 

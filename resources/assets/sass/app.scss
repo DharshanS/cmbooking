@@ -1,39 +1,4 @@
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
-// Variables
-@import "variables";
-
-// Bootstrap
-//@import "~bootstrap-sass/assets/stylesheets/bootstrap";
-//@import "~bootstrap-grid/dist";
-@import "./css/bootstrap.css";
-@import "./css/bootstrap-grid.css";
-
-
-
-
-.ui-widget.ui-widget-content {
-  /* border: 1px solid #c5c5c5; */
-  /* padding-right: 31px; */
-  //top: 432px !important;
-  //left: 3% !important;
-}
-
-
-//.ui-state-hover, .ui-state-active {
-//  color: #ffffff;
-//  text-decoration: none;
-//  background-color: #0088cc;
-//  border-radius: 0px;
-//  -webkit-border-radius: 0px;
-//  -moz-border-radius: 0px;
-//  background-image: none;
-//}
-
-
-
 @font-face {
   font-family: 'CANDARA';
   src: url('font/CANDARA.eot');
@@ -75,7 +40,7 @@ li{
 }
 .top-nav-section{
   background: #de264c;
-  padding: 6px 0;
+  padding: 5px 0;
   /* text-align: right; */
 }
 .top-second-section  {
@@ -149,7 +114,7 @@ li{
 }
 .search-label{
   color: #fff;
- // font-weight: 700;
+  font-weight: 700;
   margin: 1px;
   font-size: 15px;
 }
@@ -406,11 +371,16 @@ li{
   padding-left: 10px;
 }
 .sear-rate-main2{
+  padding-top:11px ;
   width: 19%;
   float: left;
   text-align: center;
   border-left: solid 1px #f5f5f5;
   padding-left: 10px;
+}
+.result-mai-col{
+  padding: 0px 34px !important;
+  margin-top: 22px !important;
 }
 .city-btn{
   padding: 0px 15px !important;
@@ -459,7 +429,7 @@ li{
 .cmb{
   font-weight: 700;
   font-size: 12px;
-  text-transform:uppercase;
+  text-transform:lowercase;
 }
 .cmb-icon{
   width: 31px;
@@ -468,7 +438,7 @@ li{
   color: #e22449;
   font-weight: 600;
   font-size: 12px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 .take-date{
   font-weight: 500;
@@ -496,18 +466,18 @@ li{
   padding-right: 12px;
 }
 .sort-input{
-  margin: 6px 0px;
+  margin: 2px 0px;
   border: 0 !important;
   border-radius: 0 !important;
 }
 .sort-btn{
-  margin: 6px 0px;
+  margin: 3px 0px;
   border: 0 !important;
   border-radius: 0 !important;
-  color: #fff;
+  color: #fff !important;
   font-weight: 600 !important;
-  background: #f6931d;
-  padding: 5px 44px !important;
+  background: #f6931d !important;
+  padding: 5px 53px !important;
 }
 .more-time-icon{
   font-size: 17px;
@@ -531,11 +501,214 @@ li{
   width: 30% !important;
 }
 .insu-img{
-  width: 60%!important;
+  width: 60%;
   padding-left: 5px;
 }
 .insu-btn{
   width: 30%!important;
+}
+.air-logo{
+  width: 50%;
+}
+.sort-input-main{
+  width: 63.666667%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.sort-price{
+  width: 16.666667%;
+  padding: 0px 5px;
+
+}
+.sort-air{
+  width: 16.666667%;
+  padding: 0px 7px;
+  margin-right: 15px;
+}
+
+
+
+/*Complete Booking Page*/
+
+
+.complete-main{
+  padding: 79px 78px;
+}
+.complete-cit-main{
+  width: 66%;
+  float: left;
+  margin-right: 7%;
+}
+.complete-price-main{
+  width: 25%;
+  float: left;
+}
+.complete-h{
+  color: #de264c;
+  margin-bottom: 17px;
+  margin: 0px -1px;
+  font-size: 12px;
+
+}
+.complete-lable{
+  background: #de264c;
+  color: #fff;
+  padding: 0px 10px;
+  margin-top: 21px;
+}
+.trip-main-col{
+  background: #fff;
+  border-radius: 7px !important;
+  margin-top: 10px;
+  width: 100%;
+}
+.trip-details{
+  margin-bottom: 0px;
+  color: #545454;
+  font-size: 16px;
+  width: 100%;
+}
+.price-main-col{
+  background: #fff;
+  padding: 10px;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+.complete-city-name{
+  font-weight: 500;
+  font-size: 16px;
+}
+.aport-address{
+  line-height: 0px;
+  font-size: 9px;
+  color: #828181;
+  padding-top: 3px;
+}
+.add-padding{
+  margin-bottom: 13px;
+}
+.complete-city-from-col{
+  width: 40%;
+  float: left;
+}
+.complete-city-to-col{
+  width: 40%;
+  float: left;
+}
+.complete-city-hou-col{
+  width: 20%;
+  float: left;
+}
+.trip-main{
+  width: 100%;
+}
+.trip-col-1{
+  width: 50%;
+  border-right:solid 2px ;
+  float: left;
+}
+.trip-col-2{
+  width: 50%;
+  float: left;
+  padding-left: 16px;
+
+}
+.price-col-1{
+  width:50%;
+  float: left;
+
+}
+.price-col-2{
+  width:50%;
+  text-align: right;
+  float: left;
+}
+
+.hide-btn{
+  text-align: right;
+  width: 100%;
+  margin-top: 4px;
+}
+.hite-lable{
+  background: #de264c;
+  color: #fff;
+  padding: 2px 11px;
+  border: 0;
+  border-radius: 11%;
+  font-size: 14px;
+}
+.traveler{
+  width: 100%;
+  float: left;
+
+}
+
+.trip-col-3{
+  width: 100%;
+  float: left;
+  padding-left: 16px;
+  background: #ffa707;
+
+}
+.traveler-item{
+  width: 33%;
+  float: left;
+  color: #fff;
+  padding: 0px 10px;
+  background: #ffa707;
+}
+.traveler-form-row{
+  width: 100%;
+  float: left;
+  padding-top: 10px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.form-row-item1{
+  width:33%;
+  float: left;
+  padding: 0px 5px;
+}
+
+.form-row-item2{
+  width:33%;
+  float: left;
+  padding: 0px 5px;
+}
+
+.form-row-item3{
+  width:33%;
+  float: left;
+  padding: 0px 5px;
+}
+.traveler-input{
+  width: 100%;
+  background: #ccc;
+  border: 0;
+  height: 19px;
+  padding: 0px 5px;
+  color: #8a8a8a;
+}
+.form-row-name{
+  width: 75%;
+  float: left;
+}
+.form-row-name-title{
+  width: 25%;
+  float: left;
+  padding-top: 2px;
+}
+.traveler-selec-title{
+  width: 100%;
+  background: #ccc;
+  border: 0;
+  height: 19px;
+  padding: 0px 5px;
+  color: #8a8a8a;
+}
+.trvavel-row{
+  width: 100%;
+  /*float: left;*/
 }
 /**/
 /* Medium screen : 992px. */
@@ -550,18 +723,494 @@ li{
 /* small Mobile :320px. */
 /*@media only screen and (max-width: 479px) {}*/
 
-@media (min-width: 576px) {
-  .origin{
+
+
+
+
+
+@media (min-width: 375px) {
+  .container{
+    padding: 0px 30px;
+  }
+  .or{
+    display: none;
+  }
+  .deal-item-img{
+    height: 180px;
+  }
+  .item-info-icon {
+    padding-top: 3px;
+  }
+  .info-icon {
+    width: 34px;
+    height: 34px;
+    /* border-radius: 43px; */
+    padding-top: 2px;
+  }
+  .item-info-text{
+    font-size: 14px;
+  }
+  .item-rate {
+    font-size: 13px;
+  }
+  .one-way {
+    width: 31%;
+    margin: 0px 5px;
+  }
+  .flight-trip{
+    width: 29.3%;
+    float: right;
+    font-weight: bold;
+  }
+  .main-banner-main-div {
+    height: 797px;
+  }
+  .origin {
+    width: 100%;
+  }
+  .depart {
     width: 100%;
     padding: 0 5px;
   }
-  .depart{
+  .serch-section{
+    margin-top: 165px;
+  }
+  .before-your-fly-text{
+    font-size: 14px;
+  }
+
+  .you-fly-title {
+    font-size: 20px;
+  }
+  .offer-img{
+    width:61px ;
+  }
+  .offer-book-btn {
+    font-weight: 700 !important;
+    padding: 0px 18px !important;
+  }
+  .offer-text {
+    padding: 30px 7px 0px 1px !important
+  }
+  .insu-text{
+    width: 53% !important;
+
+  }
+  .insu-img{
+    width: 22%;
+  }
+  .insu-btn{
+    width:24%!important
+  }
+  .offer-btn-col {
+    padding-top:30px !important;
+  }
+  .insurance-btn{
+    padding: 6px 20px !important;
+  }
+  .modify-main {
     width: 100%;
-    padding: 0 5px;
+    float: left;
+  }
+  .result-mai-col {
+    padding: 0px 0px !important;
+    margin-top: 22px !important;
+  }
+  .result-mai {
+    width: 100%;
+    float: left;
+  }
+  .sort-input-main {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .sort-price {
+    width: 50%;
+    padding: 0px 19px;
+  }
+  .sort-air {
+    width: 45%;
+    padding: 0px 18px;
+    margin-right: 8px;
+  }
+  .sort-p{
+    padding: 0px ;
+  }
+  .deal-item-img {
+    height: 166px;
+  }
+  .city-name-main {
+    width: 63%;
+    float: left;
+  }
+  paci-icon-main {
+    width: 37%;
+    float: left;
+  }
+  .sear-rate-main {
+    width: 75%;
+    float: right;
+    text-align: right;
+    border-left: 0;
+
+  }
+  .rel-main-info{
+    border: 0;
+  }
+
+  .city-take-col {
+    width: 50%;
+    padding-left: 4px;
+    border-bottom: solid 1px #eaeaea;
+
+  }
+  .city-right{
+    text-align: right;
+  }
+  .sear-rate-main2 {
+    padding-top: 48px;
+    width: 49%;
+  }
+  .rel-main-info2 {
+    width: 100%;
+  }
+  .city-span {
+    padding-top: 5px;
   }
 }
 
+@media (min-width: 479px) {
+  .city-span {
+    padding-top: 5px;
+  }
+  .modify-main {
+    width: 100%;
+    float: left;
+  }
+  .result-mai-col {
+    padding: 0px 0px ;
+    margin-top: 22px ;
+  }
+  .result-mai {
+    width: 100%;
+    float: left;
+  }
+  .container{
+    padding: 0px 20px;
+  }
+  .or{
+    display: none;
+  }
+  .deal-item-img{
+    height: 180px;
+  }
+  .item-info-icon {
+    padding-top: 3px;
+  }
+  .info-icon {
+    width: 34px;
+    height: 34px;
+    /* border-radius: 43px; */
+    padding-top: 2px;
+  }
+  .item-info-text{
+    font-size: 14px;
+  }
+  .item-rate {
+    font-size: 13px;
+  }
+  .one-way {
+    width: 31%;
+    margin: 0px 5px;
+  }
+  .flight-trip{
+    width: 29.3%;
+    float: right;
+    font-weight: bold;
+  }
+  .main-banner-main-div {
+    height: 797px;
+  }
+  .origin {
+    width: 100%;
+  }
+  .depart {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .serch-section{
+    margin-top: 165px;
+  }
+  .before-your-fly-text{
+    font-size: 14px;
+  }
+
+  .you-fly-title {
+    font-size: 20px;
+  }
+  .offer-img{
+    width:61px ;
+  }
+  .offer-book-btn {
+    font-weight: 700 !important;
+    padding: 0px 18px !important;
+  }
+  .offer-text {
+    padding: 30px 7px 0px 1px !important
+  }
+  .insu-text{
+    width: 53% !important;
+
+  }
+  .insu-img{
+    width: 22%;
+  }
+  .insu-btn{
+    width:24%!important
+  }
+  .offer-btn-col {
+    padding-top:30px !important;
+  }
+  .insurance-btn{
+    padding: 6px 20px !important;
+  }
+  .sort-input-main {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .sort-price {
+    width: 50%;
+    padding: 0px 19px;
+  }
+  .sort-air {
+    width: 45%;
+    padding: 0px 18px;
+    margin-right: 8px;
+  }
+  .sort-btn{
+    padding: 5px 94px !important;
+  }
+  .sort-p{
+    padding: 0px;
+  }
+
+  .city-take-col {
+    width: 49%;
+    padding-left: 68px;
+    border-bottom: solid 1px #eaeaea;
+
+  }
+  .city-right{
+    text-align: right;
+  }
+  .sear-rate-main2 {
+    padding-top: 48px;
+    width: 49%;
+  }
+  .rel-main-info2 {
+    width: 100%;
+  }
+
+  .deal-item-img {
+    height: 166px;
+  }
+  .city-name-main {
+    width: 63%;
+    float: left;
+  }
+  paci-icon-main {
+    width: 37%;
+    float: left;
+  }
+  .sear-rate-main {
+    width: 75%;
+    float: right;
+    text-align: right;
+    border-left: 0;
+
+  }
+  .rel-main-info{
+    border: 0;
+  }
+
+  .city-take-col {
+    width: 50%;
+    padding-left: 4px;
+    border-bottom: solid 1px #eaeaea;
+
+  }
+  .city-right{
+    text-align: right;
+  }
+  .sear-rate-main2 {
+    padding-top: 48px;
+    width: 49%;
+  }
+  .rel-main-info2 {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .origin{
+    width: 100% ;
+    padding: 0 5px;
+  }
+  .depart{
+    width: 100% ;
+    padding: 0 5px;
+  }
+
+  .serch-section {
+    margin-top: 171px ;
+  }
+  .or{
+    display: none;
+  }
+  .one-way {
+    width: 20%;
+    margin: 0px 2px;
+  }
+  .flight-trip {
+    width: 39%;
+    font-weight: 600;
+  }
+  .item-info-icon {
+    padding-top: 5px;
+  }
+  .info-icon{
+    width:32px;
+    height: 32px;
+  }
+  .item-into {
+    font-size: 15px;
+  }
+  .item-rate{
+    font-size: 12px;
+  }
+  .deal-item-img {
+    height: 166px;
+  }
+  .city-name-main {
+    width: 60%;
+    float: left;
+  }
+  .paci-icon-main {
+    width: 40%;
+    float: left;
+  }
+  .sear-rate-main {
+    width: 75%;
+    float: right;
+    text-align: right;
+    border-left: 0;
+
+  }
+  .rel-main-info{
+    border: 0;
+  }
+
+  .city-take-col {
+    width: 49%;
+    padding-left: 68px;
+    border-bottom: solid 1px #eaeaea;
+
+  }
+  .city-right{
+    text-align: right;
+  }
+  .sear-rate-main2 {
+    padding-top: 48px;
+    width: 49%;
+  }
+  .rel-main-info2 {
+    width: 100%;
+  }
+
+
+  /*Complete Booking Page*/
+
+  .complete-main {
+    padding: 34px 11px;
+  }
+  .complete-cit-main {
+    width: 58%;
+    float: left;
+    margin-right: 3%;
+  }
+
+  .complete-price-main {
+    width: 39%;
+    float: left;
+  }
+  .complete-price-main {
+    width: 27%;
+    float: left;
+  }
+  .complete-city-from-col{
+    width: 100%;
+    border-bottom: solid 1px #eee;
+  }
+  .complete-city-hou-col{
+    width: 100%;
+    border-bottom: solid 1px #eee;
+  }
+  .complete-city-to-col{
+    width: 100%;
+    border-bottom: solid 1px #eee;
+  }
+  .trip-details{
+    font-size: 20px;
+  }
+  .trip-col-2 {
+    width: 100%;
+    float: left;
+    padding-top: 6px;
+    padding-left: 0;
+  }
+  .trip-col-1 {
+    width: 100%;
+    border-bottom: solid 1px;
+    float: left;
+    border-right:0;
+  }
+  .price-col-1{
+    width: 100%;
+    padding-top: 6px;
+  }
+  .price-col-2{
+    width: 100%;
+    padding-top: 6px;
+  }
+}
+
+
+
 @media (min-width: 768px) {
+
+  .modify-main{
+    width: 20%;
+    float: left;
+  }
+  .result-mai{
+    width: 80%;
+    float: left;
+  }
+  .rel-main-img{
+    width: 15%;
+    float: left;
+  }
+  .section-h2 {
+
+    font-size: 28px;
+  }
+  .deal-section-bottom {
+    padding-top: 3%;
+    padding-bottom: 58px;
+  }
   .deal-item-img{
     height: 180px;
   }
@@ -588,10 +1237,14 @@ li{
     height: 450px;
   }
   .origin {
-    width: 47%;}
+    width: 46%;
+  }
   .depart {
     width: 33.33%;
     padding: 0 5px;
+  }
+  .or {
+    display: block;
   }
   .serch-section{
     margin-top: 220px;
@@ -619,7 +1272,7 @@ li{
     width: 60% !important;
   }
   .insu-img{
-    width: 40%!important;
+    width: 40%;
   }
   .insu-btn{
     width: 100%!important;
@@ -630,7 +1283,124 @@ li{
   .insurance-btn{
     padding: 6px 20px !important;
   }
+
+
+  /*SEARCH PAGE*/
+  .avg-span {
+    font-size: 11px;
+  }
+  .avg-rate {
+    font-size: 12px;
+  }
+  .result-mai-col {
+    padding: 0px 15px !important;
+    margin-top: 4px !important;
+  }
+
+  .city-take-col {
+    width: 49%;
+    padding-top: 8px;
+    float: left;
+    border-left: solid 1px #f5f5f5;
+    border-top: solid 1px #f5f5f5;
+    border-right: 0px;
+    padding-left: 0.5rem !important;
+  }
+  .sear-rate-main2 {
+    padding-top: 48px;
+    width: 49%;
+    text-align: center;
+    border-left: solid 1px #f5f5f5;
+    padding-left: 10px;
+    border-top: solid 1px #f5f5f5;
+  }
+  .rel-main-info2 {
+    font-family: 'Roboto', sans-serif !important;
+    width: 100%;
+    padding-top: 0px;
+    border: solid 1px #f5f5f5;
+  }
+
+
+  .select-now {
+    right: 22px;
+    position: absolute;
+  }
+
+  .air-logo{
+    width: 59px;
+  }
+  .filter-btn-icon {
+    padding-top: 7px;
+  }
+  .filter-btn {
+
+    font-size: 15px !important;
+
+  }
+  .rel-main-info {
+    padding-bottom: 17px;
+    border-bottom: 0
+  }
+
+
+  /*Complete Booking*/
+
+  .complete-main {
+    padding: 34px 11px;
+  }
+  .complete-cit-main {
+    width: 70%;
+    float: left;
+    margin-right: 3%;
+  }
+
+  .complete-price-main {
+    width: 27%;
+    float: left;
+  }
+  .complete-city-from-col{
+    width: 100%;
+    border-bottom: solid 1px #eee;
+  }
+  .complete-city-hou-col{
+    width: 100%;
+    border-bottom: solid 1px #eee;
+  }
+  .complete-city-to-col{
+    width: 100%;
+    border-bottom: solid 1px #eee;
+  }
+  .trip-details{
+    font-size: 20px;
+  }
+  .trip-col-2 {
+    width: 50%;
+    float: left;
+    padding-top: 0px;
+    padding-left: 6PX;
+  }
+  .trip-col-1 {
+    width: 50%;
+    border-right: solid 1px;
+    float: left;
+    border-bottom:0;
+  }
+  .price-col-2{
+    width: 50%;
+    padding-top: 0px;
+    padding-left: 6PX;
+  }
+  .price-col-1{
+    width: 50%;
+    border-right: solid 1px;
+    border-bottom:0;
+  }
+
+
 }
+
+
 
 @media (min-width: 992px) {
   .deal-item-img{
@@ -654,6 +1424,13 @@ li{
   .origin{
     width: 23%;
   }
+  .depart{
+    width: 16%;
+    padding: 0 5px;
+  }
+  .or {
+    display: block;
+  }
   .flight-trip{
     width: 15.3%;
   }
@@ -676,9 +1453,313 @@ li{
     padding-top: 7px !important;
   }
 
+
+
+
+  /*SEARCH PAGE*/
+  .avg-rate {
+    font-size: 20px;
+  }
+
+  .select-now {
+    padding: 8px 26px !important;
+    font-size: 13px !important
+  }
+  .take-date {
+    font-weight: 500;
+    font-size: 11px;
+  }
+  .sear-rate-main2 {
+    padding-top: 37px;
+  }
+
+  /*MODIFY*/
+  .modify-main{
+    width: 20%;
+    float: left;
+  }
+  .result-mai{
+    width: 80%;
+    float: left;
+  }
+  .rel-main-img{
+    width: 15%;
+    float: left;
+  }
+  .rel-main-info{
+    font-family: 'Roboto', sans-serif !important;
+    width: 85%;
+    padding-bottom: 6px;
+    float: left;
+    border-bottom: solid 1px #f5f5f5;
+  }
+  .rel-main-info2{
+    font-family: 'Roboto', sans-serif !important;
+    width: 85%;
+    padding-top: 6px;
+    float: left;
+    border-bottom: solid 1px #f5f5f5;
+  }
+  .city-name-main{
+    width: 60%;
+    float: left;
+  }
+  .paci-icon-main{
+    width: 20%;
+    float: left;
+  }
+  .sear-rate-main{
+    width: 20%;
+    float: left;
+    text-align: center;
+    border-left: solid 1px #f5f5f5;
+    padding-left: 10px;
+  }
+  .sear-rate-main2{
+    padding-top:11px ;
+    width: 19%;
+    float: left;
+
+    border-top: solid 0px #f5f5f5;
+    text-align: center;
+    border-left: solid 1px #f5f5f5;
+    padding-left: 10px;
+  }
+  .result-mai-col{
+    padding: 0px 34px !important;
+    margin-top: 22px !important;
+  }
+  .city-btn{
+    padding: 0px 15px !important;
+    color: #fff;
+    background: #048386 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+  }
+  .select-now{
+    padding: 0px 20px !important;
+    color: #fff;
+    background: #ca0852!important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 500 !important;
+    /* font-size: 14px !important; */
+  }
+  .city-span{
+    font-size: 12px;
+    color: #797676;
+    margin-top: -5px;
+    display: block;
+  }
+
+  .avg-span{
+    font-size: 14px;
+    color: #797676;
+    margin-bottom:-5px;
+    display: block;
+  }
+  .avg-rate{
+    font-size: 19px;
+    color: #7cbd1b;
+    font-weight: bold;
+    margin-bottom: -5px;
+    display: block;
+  }
+  .city-take-col{
+    width: 26.7%;
+    padding-top: 8px;
+    text-align: left;
+    border-bottom: solid 0px #eaeaea;
+    float: left;
+    border-right: solid 1px #f5f5f5;
+    border-top: solid 0px #f5f5f5;
+  }
+  .cmb{
+    font-weight: 700;
+    font-size: 12px;
+    text-transform:uppercase;
+  }
+  .cmb-icon{
+    width: 31px;
+  }
+  .take-off{
+    color: #e22449;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .take-date{
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .card-filter{
+    border: 0 !important;
+    /* background: #fff; */
+    margin-bottom: 10px;
+  }
+  .card-filter-h1{
+    background: #ffffff;
+    border: 0 !important;
+  }
+  .filter-btn{
+    color: #000 !important;
+
+    font-size: 22px !important;
+    font-weight: 500!important;
+  }
+  .filter-btn-icon{
+    padding-top: 14px;
+    font-size: 19px;
+    color: #e22449;
+    padding-right: 12px;
+  }
+  .sort-input{
+    margin: 2px 0px;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+  .sort-btn{
+    margin: 3px 0px;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    background: #f6931d !important;
+    padding: 5px 53px !important;
+  }
+  .more-time-icon{
+    font-size: 17px;
+    color: #f6931d;
+  }
+  .insurance-btn-col{
+    text-align: center;
+    padding-top: 39px !important;
+
+  }
+  .insurance-btn{
+    background: #f6931d;
+    color: #fff;
+    font-weight: 600 !important;
+    padding: 6px 54px !important;
+    text-transform: uppercase;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+  .insu-text{
+    width: 30% !important;
+  }
+  .insu-img{
+    width: 60%;
+    padding-left: 5px;
+  }
+  .insu-btn{
+    width: 30%!important;
+  }
+  .air-logo{
+    width: 60%;
+  }
+  .sort-input-main{
+    width: 63.666667%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .sort-price{
+    width: 16.666667%;
+    padding: 0px 5px;
+
+  }
+  .sort-air{
+    width: 16.666667%;
+    padding: 0px 7px;
+    margin-right: 15px;
+  }
+
+
+  /*Complete Booking*/
+
+  .complete-main{
+    padding: 79px 78px;
+  }
+  .complete-cit-main{
+    width: 66%;
+    float: left;
+    margin-right: 7%;
+  }
+  .complete-price-main{
+    width: 25%;
+    float: left;
+  }
+  .complete-city-name {
+    font-size: 14px;
+  }
+  .add-padding {
+    margin-bottom: 12px;
+  }
+  .aport-address {
+    font-size: 8px;
+
+  }
+
 }
 
 @media (min-width: 1200px) {
+  .modify-main{
+    width: 20%;
+    float: left;
+  }
+  .result-mai{
+    width: 80%;
+    float: left;
+  }
+  .rel-main-img{
+    width: 15%;
+    float: left;
+  }
+  .result-mai-col {
+    padding: 0px 34px !important;
+    margin-top: 22px !important;
+  }
+  .select-now {
+    padding: 4px 21px !important;
+    color: #fff;
+    background: #ca0852!important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 600 !important;
+    /* font-size: 14px !important; */
+  }
+  .rel-main-info2 {
+    font-family: 'Roboto', sans-serif !important;
+    width: 100%;
+    padding-top: 0px;
+    border: solid 0px #f5f5f5;
+  }
+  .sear-rate-main2 {
+    padding-top: 11px;
+    width: 19%;
+    float: left;
+    text-align: center;
+    border-left: solid 1px #f5f5f5;
+    padding-left: 10px;
+  }
+
+  .city-take-col {
+    width: 26.7%;
+    padding-top: 8px;
+    float: left;
+    border-right: solid 1px #f5f5f5;
+    padding-left: 0.5rem !important;
+    border-left: 0;
+  }
+
+  .rel-main-info2{
+    width: 85%;
+  }
+  .rel-main-info2{
+    width: 85%;
+  }
   .deal-item-img{
     height: 180px;
   }
@@ -709,6 +1790,9 @@ li{
     width: 16%;
     padding: 0 5px;
   }
+  .or {
+    display: block;
+  }
   .main-banner-main-div{
     height: 554px;
 
@@ -730,7 +1814,7 @@ li{
     width: 43% !important;
   }
   .insu-img{
-    width: 27%!important;
+    width: 27%;
   }
   .insu-btn{
     width: 30%!important;
@@ -739,8 +1823,307 @@ li{
   .offer-img {
     width: 75px;
   }
+
+
+
+  /*MODIFY*/
+  .modify-main{
+    width: 20%;
+    float: left;
+  }
+  .result-mai{
+    width: 80%;
+    float: left;
+  }
+  .rel-main-img{
+    width: 15%;
+    float: left;
+    height: auto;
+    background: #e0e0e0;
+    padding-right: 0px;
+    padding: 52px;
+    text-align: center;
+  }
+  .rel-main-info{
+    font-family: 'Roboto', sans-serif !important;
+    width: 85%;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    float: left;
+    border-bottom: solid 1px #f5f5f5;
+  }
+  .rel-main-info2{
+    font-family: 'Roboto', sans-serif !important;
+    width: 85%;
+    padding-left: 12px;
+    padding-top: 6px;
+    float: left;
+    border-bottom: solid 1px #f5f5f5;
+  }
+  .city-name-main{
+    width: 60%;
+    float: left;
+  }
+  .paci-icon-main{
+    width: 20%;
+    float: left;
+  }
+  .sear-rate-main{
+    width: 20%;
+    float: left;
+    text-align: center;
+    border-left: solid 1px #f5f5f5;
+    padding-left: 10px;
+  }
+  .sear-rate-main2{
+    padding-top:11px ;
+    width: 19%;
+    float: left;
+
+    border-top: solid 0px #f5f5f5;
+    text-align: center;
+    border-left: solid 1px #f5f5f5;
+    padding-left: 10px;
+  }
+  .result-mai-col{
+    padding: 0px 34px !important;
+    margin-top: 22px !important;
+  }
+  .city-btn{
+    padding: 0px 15px !important;
+    color: #fff;
+    background: #048386 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+  }
+  .select-now{
+    padding: 4px 26px !important;
+    color: #fff;
+    background: #ca0852!important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 500 !important;
+    /* font-size: 14px !important; */
+  }
+  .city-span{
+    font-size: 12px;
+    color: #797676;
+    margin-top: -5px;
+    display: block;
+  }
+
+  .avg-span{
+    font-size: 14px;
+    color: #797676;
+    margin-bottom:-5px;
+    display: block;
+  }
+  .avg-rate{
+    font-size: 22px;
+    color: #7cbd1b;
+    font-weight: bold;
+    margin-bottom: -5px;
+    display: block;
+  }
+  .city-take-col{
+    width: 26.7%;
+    padding-top: 8px;
+    text-align: left;
+    border-bottom: solid 0px #eaeaea;
+    float: left;
+    border-right: solid 1px #f5f5f5;
+    border-top: solid 0px #f5f5f5;
+  }
+  .cmb{
+    font-weight: 600;
+    font-size: 11px;
+    text-transform:uppercase;
+  }
+  .cmb-icon{
+    width: 31px;
+  }
+  .take-off{
+    color: #e22449;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  .take-date{
+    font-weight: 600;
+    font-size: 11px;
+  }
+  .card-filter{
+    border: 0 !important;
+    /* background: #fff; */
+    margin-bottom: 10px;
+  }
+  .card-filter-h1{
+    background: #ffffff;
+    border: 0 !important;
+  }
+  .filter-btn{
+    color: #000 !important;
+    font-size: 15px !important;
+    font-weight: 500!important;
+  }
+  .filter-btn-icon{
+    padding-top: 14px;
+    font-size: 19px;
+    color: #e22449;
+    padding-right: 12px;
+  }
+  .sort-input{
+    margin: 2px 0px;
+    padding: 0.375rem 18px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+  .sort-btn{
+    margin: 3px 0px;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    background: #f6931d !important;
+    padding: 5px 53px !important;
+  }
+  .more-time-icon{
+    font-size: 17px;
+    color: #f6931d;
+  }
+  .insurance-btn-col{
+    text-align: center;
+    padding-top: 39px !important;
+
+  }
+  .insurance-btn{
+    background: #f6931d;
+    color: #fff;
+    font-weight: 600 !important;
+    padding: 6px 54px !important;
+    text-transform: uppercase;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+  .insu-text{
+    width: 40% !important;
+    padding-left: 5px;
+    font-size: 17px;
+  }
+  .insu-img{
+    width: 30%;
+    padding-left: 5px;
+  }
+  .insu-btn{
+    width: 30%!important;
+  }
+  .air-logo{
+    width: 100%;
+  }
+  .sort-input-main{
+    width: 63.666667%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .sort-price{
+    width: 16.666667%;
+    padding: 0px 5px;
+
+  }
+  .sort-air{
+    width: 16.666667%;
+    padding: 0px 11px;
+    margin-right: 15px;
+  }
+
+
+
+  /*Complete Booking*/
+
+  .complete-main{
+    padding: 79px 78px;
+  }
+  .complete-cit-main{
+    width: 66%;
+    float: left;
+    margin-right: 7%;
+  }
+  .complete-price-main{
+    width: 25%;
+    float: left;
+  }
+  .aport-address {
+    font-size: 9px;
+  }
+  .complete-city-from-col {
+    width: 40%;
+    float: left;
+    border-bottom: solid 0px #eee;
+  }
+  .complete-city-to-col {
+    width: 40%;
+    float: left;
+    border-bottom: solid 0px #eee;
+  }
+  .complete-city-hou-col {
+    width: 20%;
+    float: left;
+    border-bottom: solid 0px #eee;
+  }
+  .trip-details {
+    margin-bottom: 0px;
+    color: #545454;
+    font-size: 16px;
+    width: 100%;
+  }
+  .complete-city-name {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .price-col-1{
+    border: 0;
+  }
 }
 @media (min-width:1630px) {
+  .modify-main{
+    width: 20%;
+    float: left;
+  }
+  .result-mai{
+    width: 80%;
+    float: left;
+  }
+  .rel-main-img{
+    width: 15%;
+    float: left;
+  }
+  .select-now {
+    padding: 0px 20px !important;
+    color: #fff;
+    background: #ca0852!important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 500 !important;
+    /* font-size: 14px !important; */
+  }
+  .sear-rate-main2 {
+    padding-top: 11px;
+    width: 19%;
+    float: left;
+    text-align: center;
+    border-left: solid 1px #f5f5f5;
+    padding-left: 10px;
+  }
+  .city-take-col{
+    width: 26.7%;
+
+    border-top: solid 0px #f5f5f5;
+  }
+  .air-logo{
+    width: 50%;
+  }
   .deal-item-img {
     height: 217px;
   }
@@ -766,13 +2149,276 @@ li{
     width: 16%;
     padding: 0 5px;
   }
+  .or {
+    display: block;
+  }
+  .insu-text{
+    width: 43% !important;
+  }
+  .insu-img{
+    width: 27%;
+    padding-right: 13px;
+  }
+  .insu-btn{
+    width: 30%!important;
+    padding-top: 44px !important;
+    padding-right: 13px;
+  }
+  .offer-img {
+    width: 91px;
+  }
+  .offer-text {
+    padding: 38px 0px 0px 2px !important;
+    font-size: 24px;
+  }
+  .serch-section {
+
+    margin-top: 365px;
+
+  }
+
+  /*modify */
+  .modify-main{
+    width: 20%;
+    float: left;
+  }
+  .result-mai{
+    width: 80%;
+    float: left;
+  }
+  .rel-main-img{
+    width: 15%;
+    float: left;
+  }
+  .rel-main-info{
+    font-family: 'Roboto', sans-serif !important;
+    width: 85%;
+    padding-bottom: 6px;
+    float: left;
+    border-bottom: solid 1px #f5f5f5;
+  }
+  .rel-main-info2{
+    font-family: 'Roboto', sans-serif !important;
+    width: 85%;
+    padding-top: 6px;
+    float: left;
+    border-bottom: solid 1px #f5f5f5;
+  }
+  .city-name-main{
+    width: 60%;
+    float: left;
+  }
+  .paci-icon-main{
+    width: 20%;
+    float: left;
+  }
+  .sear-rate-main{
+    width: 20%;
+    float: left;
+    text-align: center;
+    border-left: solid 1px #f5f5f5;
+    padding-left: 10px;
+  }
+  .sear-rate-main2{
+    padding-top:11px ;
+    width: 19%;
+    float: left;
+    text-align: center;
+    border-top: solid 0px #f5f5f5;
+    border-left: solid 1px #f5f5f5;
+    padding-left: 10px;
+  }
+  .result-mai-col{
+    padding: 0px 34px !important;
+    margin-top: 22px !important;
+  }
+  .city-btn{
+    padding: 0px 15px !important;
+    color: #fff;
+    background: #048386 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+  }
+  .select-now{
+    padding: 0px 20px !important;
+    color: #fff;
+    background: #ca0852!important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    font-weight: 500 !important;
+    /* font-size: 14px !important; */
+  }
+  .city-span{
+    font-size: 12px;
+    color: #797676;
+    margin-top: -5px;
+    display: block;
+  }
+
+  .avg-span{
+    font-size: 14px;
+    color: #797676;
+    margin-bottom:-5px;
+    display: block;
+  }
+  .avg-rate{
+    font-size: 22px;
+    color: #7cbd1b;
+    font-weight: bold;
+    margin-bottom: -5px;
+    display: block;
+  }
+  .city-take-col{
+    width: 26.7%;
+    text-align: left;
+    padding-top: 8px;
+    border-bottom: solid 0px #eaeaea;
+    float: left;
+    border-right: solid 1px #f5f5f5
+  }
+  .cmb{
+    font-weight: 700;
+    font-size: 12px;
+    text-transform:uppercase;
+  }
+  .cmb-icon{
+    width: 31px;
+  }
+  .take-off{
+    color: #e22449;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .take-date{
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .card-filter{
+    border: 0 !important;
+    /* background: #fff; */
+    margin-bottom: 10px;
+  }
+  .card-filter-h1{
+    background: #ffffff;
+    border: 0 !important;
+  }
+  .filter-btn{
+    color: #000 !important;
+
+    font-size: 22px !important;
+    font-weight: 500!important;
+  }
+  .filter-btn-icon{
+    padding-top: 14px;
+    font-size: 19px;
+    color: #e22449;
+    padding-right: 12px;
+  }
+  .sort-input{
+    margin: 2px 0px;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+  .sort-btn{
+    margin: 3px 0px;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    background: #f6931d !important;
+    padding: 5px 53px !important;
+  }
+  .more-time-icon{
+    font-size: 17px;
+    color: #f6931d;
+  }
+  .insurance-btn-col{
+    text-align: center;
+    padding-top: 39px !important;
+
+  }
+  .insurance-btn{
+    background: #f6931d;
+    color: #fff;
+    font-weight: 600 !important;
+    padding: 6px 54px !important;
+    text-transform: uppercase;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
   .insu-text{
     width: 30% !important;
   }
   .insu-img{
-    width: 60%!important;
+    width: 60%;
+    padding-left: 5px;
   }
   .insu-btn{
     width: 30%!important;
+  }
+  .air-logo{
+    width: 50%;
+  }
+  .sort-input-main{
+    width: 63.666667%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .sort-price{
+    width: 16.666667%;
+    padding: 0px 5px;
+
+  }
+  .sort-air{
+    width: 16.666667%;
+    padding: 0px 7px;
+    margin-right: 15px;
+  }
+
+
+  /*Complete Booking*/
+
+  .complete-main{
+    padding: 79px 78px;
+  }
+  .complete-cit-main{
+    width: 66%;
+    float: left;
+    margin-right: 7%;
+  }
+  .complete-price-main{
+    width: 25%;
+    float: left;
+  }
+  .aport-address {
+    font-size: 9px;
+  }
+  .complete-city-from-col {
+    width: 40%;
+    float: left;
+    border-bottom: solid 0px #eee;
+  }
+  .complete-city-to-col {
+    width: 40%;
+    float: left;
+    border-bottom: solid 0px #eee;
+  }
+  .complete-city-hou-col {
+    width: 20%;
+    float: left;
+    border-bottom: solid 0px #eee;
+  }
+  .trip-details {
+    margin-bottom: 0px;
+    color: #545454;
+    font-size: 16px;
+    width: 100%;
+  }
+  .complete-city-name {
+    font-weight: 500;
+    font-size: 16px;
   }
 }

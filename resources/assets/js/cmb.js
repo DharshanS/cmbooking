@@ -2,19 +2,49 @@
  * Created by dharshan on 5/31/18.
  */
 $(document).ready(function(){
-    var availableTags = [
-
-        "Colombo - Bandaranayike International Airport(CMB) - Sri Lanka ",
 
 
 
-    ];
+  var  airports=new Array();
+
     $( "#origin" ).autocomplete({
-        source: availableTags
+
+        source: function( request, response ) {
+            $.ajax( {
+                url: "api/findAirports",
+                dataType: "json",
+                data: {
+                    query: request.data
+                },
+                success: function( data ) {
+                    //console.log(data);
+                    airports=null;
+                    data.forEach(function (index) {
+                        console.log(index)
+                       var airport={
+                           label: index.airport_name,
+                           value: index.iata_code,
+                           category: ""
+                       }
+                      airports=airport;
+
+                    })
+
+                    response(airports) ;
+
+
+                }
+            } );
+        },
+        minLength: 1,
+        select: function( event, ui ) {
+            log( "Selected: " + ui.item.value + " aka " + ui.item.id );
+        }
+       // source: availableTags
     });
 
     $( "#destination" ).autocomplete({
-        source: availableTags
+       // source: availableTags
     });
 
 

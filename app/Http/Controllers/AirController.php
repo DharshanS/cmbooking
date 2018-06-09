@@ -32,34 +32,39 @@ public function __construct(AirServiceImpl $airRequest,CoreServiceImp $core)
 
 
     public function airSearch(Request $search){
+
+
+Log::info(" -----airSearch---- ");
+
+
         $airSearch=new AirSearch();
-        $mode=$search->get('mode');
-        $cities=$search->get('airport');
-        $depDate=$search->get('date_from');
-        $departure=$cities[0];
-        $arrival=$cities[1];
-        $adult=$search->get('adult');
-        $child=$search->get('child');
-        $infant=$search->get('infant');
-
-        $comingBack="";
-        if($mode=='round')
-        {
-            $comingBack =$search->get('date_to');
-        }
-
-        Log::info("from : ".$cities[0]);
-        Log::info("where : ".$cities[1]);
-        Log::info("date form : ".$depDate);
-        Log::info("mode : ".$mode);
-        Log::info("adult : ".$search->adult);
-        Log::info("child : ".$child);
-        Log::info("infant : ".$infant);
-
+//        $mode=$search->get('mode');
+//        $cities=$search->get('airport');
+//        $depDate=$search->get('date_from');
+//        $departure=$cities[0];
+//        $arrival=$cities[1];
+//        $adult=$search->get('adult');
+//        $child=$search->get('child');
+//        $infant=$search->get('infant');
+//
+//        $comingBack="";
+//        if($mode=='round')
+//        {
+//            $comingBack =$search->get('date_to');
+//        }
+//
+//        Log::info("from : ".$cities[0]);
+//        Log::info("where : ".$cities[1]);
+//        Log::info("date form : ".$depDate);
+//        Log::info("mode : ".$mode);
+//        Log::info("adult : ".$search->adult);
+//        Log::info("child : ".$child);
+//        Log::info("infant : ".$infant);
+//
 
 ;
 
-        $airSearch->departureCity[]=$departure;
+        $airSearch->departureCity[]='CMB';
         $airSearch->departureDate[]='2017-12-27';
         $airSearch->arrivalCity[]='BKK';
         $airSearch->arrivalDate[]='2017-12-31';
@@ -73,9 +78,15 @@ public function __construct(AirServiceImpl $airRequest,CoreServiceImp $core)
        // Log::info(print_r($airList,true));
 
 
-        return view('airviews.round',['airList' => $airList]);
+
+//return view('airviews.round',['airList' => $airList]);
+
+        return view('flight.air-view-oneway',['airList' => $airList]);
 
     }
+
+
+
 
     public function priceFlight(){
 
@@ -94,10 +105,10 @@ public function index(){
 
     public function loadCities(Request $query){
 
-        Log::info("request---->".$query->input('query'));
+        Log::info("request---->".$query->input('term'));
 
         $cities=$this->core->getCitiesFromDb($query->input('query'));
-       //Log::info("cities---->".print_r($cities,true));
+       Log::info("cities---->".print_r($cities,true));
 
           return \GuzzleHttp\json_encode($cities);
 

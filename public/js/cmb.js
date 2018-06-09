@@ -79,13 +79,44 @@ module.exports = __webpack_require__(2);
  * Created by dharshan on 5/31/18.
  */
 $(document).ready(function () {
-    var availableTags = ["Colombo - Bandaranayike International Airport(CMB) - Sri Lanka "];
+
+    var airports = new Array();
+
     $("#origin").autocomplete({
-        source: availableTags
+
+        source: function source(request, response) {
+            $.ajax({
+                url: "api/findAirports",
+                dataType: "json",
+                data: {
+                    query: request.data
+                },
+                success: function success(data) {
+                    //console.log(data);
+                    airports = null;
+                    data.forEach(function (index) {
+                        console.log(index);
+                        var airport = {
+                            label: index.airport_name,
+                            value: index.iata_code,
+                            category: ""
+                        };
+                        airports = airport;
+                    });
+
+                    response(airports);
+                }
+            });
+        },
+        minLength: 1,
+        select: function select(event, ui) {
+            log("Selected: " + ui.item.value + " aka " + ui.item.id);
+        }
+        // source: availableTags
     });
 
     $("#destination").autocomplete({
-        source: availableTags
+        // source: availableTags
     });
 
     // $('#depart-date').datepicker().on('change',function (eve) {

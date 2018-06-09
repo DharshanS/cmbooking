@@ -38,7 +38,7 @@ class AirServiceImpl implements AirService
     {
 
 
-        $fileName ='round.xml';// 'oneway.xml';
+        $fileName ='oneway.xml';// 'oneway.xml';
         $response = $this->core->sendToTrvPort($this->travelPort->getOneWaySearchRequest($airSearch), $fileName);
        // Log::info(print_r($response,true));
 
@@ -53,7 +53,8 @@ class AirServiceImpl implements AirService
             return $response;
         };
 
-        return $this->lowFareSearchRoundTrip();
+        return $this->lowFareSearchProcessOneWay();
+       // return $this->lowFareSearchRoundTrip();
     }
 
     /**
@@ -62,41 +63,20 @@ class AirServiceImpl implements AirService
 
     private function lowFareSearchProcessOneWay()
     {
-        $airAirPricePointList = $this->lowFareResponse->airAirPricePointList->airAirPricePoint;
-        Log::info(print_r($airAirPricePointList,true));
+        $airAirPricePointList = $this->lowFareResponse['airAirPricePointList']['airAirPricePoint'];
+        //  $airFareInfoList=$this->lowFareResponse['airLowFareSearchRsp']['airFareInfoList'];
 
+        $count=0;
         $flightList = [];
-        foreach ($airAirPricePointList as $airIndex) {
-            $air = new Air();
-            $ariLine = (string)$airIndex->airAirPricingInfo->attributes()->PlatingCarrier;
-            $air->airPrice = $airIndex;
-            $airSegment = [];
-            $airOptions = $airIndex->airAirPricingInfo->airFlightOptionsList->airFlightOption->airOption;
-            try {
-                if (count($airOptions) == 0) {
-                    $airOptions = array($airOptions);//check more times in the flight
-                }
-                foreach ($airOptions as $airOption) {
-                    $flightOptions = $airOption->airBookingInfo;
-                    if (count($flightOptions) == 0) {
-                        $flightOptions = array($flightOptions);
-                    }
-                    $temp = [];
-                    foreach ($flightOptions as $key => $index) {
-                        $key = $index->attributes()->SegmentRef;// get the key find the airsegmant
-                        $temp[] = $this->airSegment($key, $ariLine);
-                    }
+        foreach ($airAirPricePointList as $out=> $airItem) {
+            $count++;
 
-                    $airSegment[] = $temp;
-                }
-            } catch (Exception $exception) {
-                Log::error($exception);
-
-            }
-            $air->airSegment = $airSegment;
-
+            $airOptionlistOut=$airItem['airAirPricingInfo']['airFlightOptionsList']['airFlightOption']['airOption'];
+//            $airOptionlistIn=$airItem['airAirPricingInfo']['airFlightOptionsList']['airFlightOption'][1]['airOption'];
+            $airAirPricingInfo=$airItem['airAirPricingInfo']['@attributes'];
+            $air['outBound']=$this->getAirBeanList($airOptionlistOut,$airAirPricingInfo);
+          //  $air['inBound']=$this->getAirBeanList($airOptionlistIn,$airAirPricingInfo);
             $flightList[] = $air;
-
         }
         return $flightList;
 

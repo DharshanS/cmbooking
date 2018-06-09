@@ -122,8 +122,8 @@ class CoreServiceImp implements CoreServices
 
 
     function getCitiesFromDb($query){
-        $query="select * from airports where city like '$query%'";
-       return DB::select($query);
+      //  $query="select * from airports where city like $query%";
+       return DB::table('airports')->where('city', 'like', 'col%')->get();
 
 
     }
